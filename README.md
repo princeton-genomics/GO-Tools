@@ -10,7 +10,7 @@ This is a small collection of Gene Ontology tools developed at the Lewis-Sigler 
 2. **[Dependencies](#dependencies)**
 3. **[Roadmap](#roadmap)**
 4. **[Publications](#publications)**
-5. **[Citation](#citation)
+5. **[Citation](#citation)**
 6. **[Links](#links)**
 7. **[License](#license)**
 8. **[Disclaimer](#disclaimer)**
@@ -25,7 +25,7 @@ Most of these tools depend on the [GO::TermFinder](http://search.cpan.org/dist/G
 
 These tools are made publicly available through the [GMOD Project](http://www.gmod.org/).
 
-Everything in this repository is Copyright (c) Lewis-Sigler Institute, Princeton University.
+Everything in this repository is Copyright (c) 2014 and 2017 Lewis-Sigler Institute, Princeton University.
 
 ### GOTermFinder
 
@@ -49,7 +49,7 @@ LAGO was developed much more recently to address the efficiency of GOTermFinder,
 
 * [GO::TermFinder 0.86](http://search.cpan.org/dist/GO-TermFinder/)
 * graphviz 2.30.1-19 (there are often significant changes between versions)
-* [map2slim, part of go-perl](http://search.cpan.org/~cmungall/go-perl/scripts/map2slim) (for GOTermMapper)
+* [map2slim](http://search.cpan.org/~cmungall/go-perl/scripts/map2slim) part of [go-perl](http://search.cpan.org/~cmungall/go-perl) (for GOTermMapper)
 
 ## Roadmap
 
@@ -79,7 +79,7 @@ the URL for the specific tool that is relevant to your publication.
 
 ## Links
 
-* [GO tools at LSI](http://go.princeton.edu)
+* [GO tools at Princeton LSI](http://go.princeton.edu)
 * [GO::TermFinder](http://search.cpan.org/dist/GO-TermFinder/)
 * [go-perl](http://search.cpan.org/~cmungall/go-perl)
 * [Gene Ontology Consortium](http://geneontology.org)
