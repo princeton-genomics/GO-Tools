@@ -25,7 +25,7 @@ Most of these tools depend on the [GO::TermFinder](http://search.cpan.org/dist/G
 
 These tools are made publicly available through the [GMOD Project](http://www.gmod.org/).
 
-Everything in this repository is Copyright (c) 2014 and 2017 Lewis-Sigler Institute, Princeton University.
+Everything in this repository is Copyright (c) 2004 and 2017 Lewis-Sigler Institute, Princeton University.
 
 ### GOTermFinder
 
