@@ -1,0 +1,3 @@
+The GoView.conf file is used by the GO::View module. It will need to
+be readable by the GOTermFinder.pl script. See the README in the bin
+dir for more information.
