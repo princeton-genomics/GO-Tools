@@ -21,7 +21,7 @@ This is a small collection of Gene Ontology tools developed at the Lewis-Sigler 
 
 The Gene Ontology (GO) project seeks to describe how genes encode biological functions using formal ontologies with a controlled vocabulary of terms and gene product annotations from GO Consortium members and other contributors. Generally, data is presented as a file describing the ontology (ie. gene_ontology.obo) and other files containing the species-specific annotations provided some database/project (ie. gene_association.pombase). Please see the [Gene Ontology Consortium](http://geneontology.org) and other sources in the [link section](#links) for more information.
 
-Most of these tools depend on the [GO::TermFinder](http://search.cpan.org/dist/GO-TermFinder/) perl module by Gavin Sherlock and Shuai Weng at Stanford University and the **GO::View** perl module written by Shuai Weng. GO::TermFinder is described in **GO::TermFinder--open source software for accessing Gene Ontology information and finding significantly enriched Gene Ontology terms associated with a list of genes., Boyle et al, Bioinformatics (2004)**, available at [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/15297299).
+Most of these tools depend on the [GO::TermFinder](http://search.cpan.org/dist/GO-TermFinder/) perl module by Gavin Sherlock and Shuai Weng at Stanford University and the **GO::View** perl module written by Shuai Weng (also distributed with GO::TermFinder). GO::TermFinder is described in **GO::TermFinder--open source software for accessing Gene Ontology information and finding significantly enriched Gene Ontology terms associated with a list of genes., Boyle et al, Bioinformatics (2004)**, available at [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/15297299).
 
 These tools are made publicly available through the [GMOD Project](http://www.gmod.org/).
 
@@ -48,7 +48,10 @@ LAGO was developed much more recently to address the efficiency of GOTermFinder,
 ## Dependencies
 
 * [GO::TermFinder 0.86](http://search.cpan.org/dist/GO-TermFinder/)
-* graphviz 2.30.1-19 (there are often significant changes between versions)
+* GD library
+* perl GD module
+* graphviz (version 2.30.0-1 or 2.30.1-19 recommended, as there are often significant changes between versions)
+* perl GraphViz module
 * [map2slim](http://search.cpan.org/~cmungall/go-perl/scripts/map2slim) part of [go-perl](http://search.cpan.org/~cmungall/go-perl) (for GOTermMapper)
 
 ## Roadmap
