@@ -90,7 +90,7 @@ Use the cache in a query:
 /usr/bin/perl GOTermFinder.pl -cache /tmp/sgd_P.bin -a P -g /data/gene_association.sgd -f /data/gene_ontology.obo -t /tmp/out genes.txt
 ```
 
-(The -g and -f options are still required, possibly a bug, or possibly to validate the cache.)
+(The -g and -f options are still required, intended for cache validation.)
 
 There are many other options available, but they are mostly for edge-case usage.
 
