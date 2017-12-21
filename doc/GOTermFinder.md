@@ -25,18 +25,23 @@ To improve processing time, the script can store and retrieve internal data obje
 
 The minimal arguments are:
 
+```
 -t <output directory> (defaults to /tmp)
 -a <ontology aspect> (C|F|P)
 -g <gene annotation file>
 -f <ontology file> (defaults to gene_ontology.obo)
 <file containing list of identifiers>
+```
 
 Process aspect, minimal output:
 
+```
 /usr/bin/perl GOTermFinder.pl -a P -g /data/gene_association.sgd -f /data/gene_ontology.obo -t /tmp/out genes.txt
+```
 
 There are several other options which are often useful:
 
+```
 -h (generate HTML table)
 -i (generate DAG files and HTML image-mapped file)
 -p (p-value cutoff, default 0.01)
@@ -46,31 +51,44 @@ There are several other options which are often useful:
 -e [-]<evidence code list>
 -l (do not follow regulation links)
 -C "none"|"bonferroni" (p-value correction method, default is "bonferroni")
+```
 
 P-value cutoff of 0.001, background size 6468, make image and HTML files:
 
+```
 /usr/bin/perl GOTermFinder.pl -ih -p 0.001 -n 6468 -a P -g /data/gene_association.sgd -f /data/gene_ontology.obo -t /tmp/out genes.txt
+```
 
 Function aspect, background identifier list:
 
+```
 /usr/bin/perl GOTermFinder.pl -ih -a F -g /data/gene_association.sgd -f /data/gene_ontology.obo -t /tmp/out -b background.txt genes.txt
+```
 
 Compute FDR, exclude IEA and ND annotations:
 
+```
 /usr/bin/perl GOTermFinder.pl -ih -F -e -IEA,ND -a P -g /data/gene_association.sgd -f /data/gene_ontology.obo -t /tmp/out genes.txt
+```
 
 To support pre-parsed files:
 
+```
 -cache <path>
 -write-cache
+```
 
 Save the pre-parsed objects in a cache file (basic options only):
 
+```
 /usr/bin/perl GOTermFinder.pl -write-cache -cache /tmp/sgd_P.bin -a P -g /data/gene_association.sgd -f /data/gene_ontology.obo
+```
 
 Use the cache in a query:
 
+```
 /usr/bin/perl GOTermFinder.pl -cache /tmp/sgd_P.bin -a P -g /data/gene_association.sgd -f /data/gene_ontology.obo -t /tmp/out genes.txt
+```
 
 (The -g and -f options are still required, possibly a bug, or possibly to validate the cache.)
 
